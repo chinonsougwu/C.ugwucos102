@@ -71,15 +71,24 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 2,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-2-721edc98ed20>, line 5)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-2-721edc98ed20>\"\u001b[1;36m, line \u001b[1;32m5\u001b[0m\n\u001b[1;33m    class Parrot()\u001b[0m\n\u001b[1;37m                  ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
    "source": [
     "# A Python program to\n",
     "# demonstrate defining\n",
     "# a class\n",
     "\n",
-    "class Parrot():\n",
+    "class Parrot()\n",
     "    pass"
    ]
   },
@@ -130,16 +139,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "mammal\n",
-      "I'm a mammal\n",
-      "I'm a dog\n"
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-1-fb12147ddad7>, line 6)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-1-fb12147ddad7>\"\u001b[1;36m, line \u001b[1;32m6\u001b[0m\n\u001b[1;33m    Class Dog[]:\u001b[0m\n\u001b[1;37m          ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
      ]
     }
    ],
@@ -149,7 +157,7 @@
     "# a class\n",
     "\n",
     "\n",
-    "class Dog:\n",
+    "Class Dog[]:\n",
     "\n",
     "    # A simple class\n",
     "    # attribute\n",
@@ -158,17 +166,17 @@
     "\n",
     "    # A class method\n",
     "    def fun(self):\n",
-    "        print(\"I'm a\", self.attr1)\n",
+    "        print(\"I'm a\", self.attrI)\n",
     "        print(\"I'm a\", self.attr2)\n",
     "\n",
     "# Object instantiation\n",
-    "Rodger = Dog()\n",
+    "Rodger = Dog[]\n",
     "\n",
     "# Accessing class attributes\n",
     "# and method through objects\n",
     "\n",
     "print(Rodger.attr1)\n",
-    "Rodger.fun()\n"
+    "Rodger.Fun[]\n"
    ]
   },
   {
@@ -199,15 +207,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Address of self =  1698381098832\n",
-      "Address of class object =  1698381098832\n"
+     "ename": "NameError",
+     "evalue": "name 'check__' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-2-becd1c8e30ff>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      5\u001b[0m         \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Address of self = \"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0mid\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      6\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 7\u001b[1;33m \u001b[0mobj\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcheck__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      8\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Address of class object = \"\u001b[0m\u001b[1;33m,\u001b[0m\u001b[0mid\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mObj\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'check__' is not defined"
      ]
     }
    ],
@@ -218,23 +229,24 @@
     "    def __init__(self):\n",
     "        print(\"Address of self = \",id(self))\n",
     "\n",
-    "obj = check_()\n",
-    "print(\"Address of class object = \",id(obj))\n"
+    "obj = check__()\n",
+    "print(\"Address of class object = \",id(Obj))\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Model is Toyota Corolla\n",
-      "color is blue\n",
-      "Model is Kia Cerato\n",
-      "color is green\n"
+     "ename": "TypeError",
+     "evalue": "__init__() takes 3 positional arguments but 4 were given",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-3-2543e2d4bc90>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     13\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     14\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 15\u001b[1;33m \u001b[0mtoyota\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcar\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Toyota Corolla\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"blue\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;36m2009\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     16\u001b[0m \u001b[0mkia\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcar\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Kia Cerato\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"green\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;36m2020\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"Automatic\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     17\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: __init__() takes 3 positional arguments but 4 were given"
      ]
     }
    ],
@@ -244,7 +256,7 @@
     "class car():\n",
     "\n",
     "    # init method or constructor\n",
-    "    def __init__(self, model, color,date):\n",
+    "    def __init__(self, model, color):\n",
     "        self.model = model\n",
     "        self.color = color\n",
     "\n",
@@ -254,7 +266,7 @@
     "\n",
     "\n",
     "toyota = car(\"Toyota Corolla\", \"blue\", 2009)\n",
-    "kia = car(\"Kia Cerato\", \"green\", 2020 )\n",
+    "kia = car(\"Kia Cerato\", \"green\", 2020, \"Automatic\")\n",
     "\n",
     "toyota.show() # same output as car.show(toyota)\n",
     "kia.show() # same output as car.show(kia)\n",
@@ -270,22 +282,25 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "This is Constructor\n",
-      "Worked fine\n"
+     "ename": "TypeError",
+     "evalue": "__init__() takes 0 positional arguments but 1 was given",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-4-19a7534ebc5b>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      4\u001b[0m         \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"This is Constructor\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 6\u001b[1;33m \u001b[0mobject\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcheck\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Worked fine\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: __init__() takes 0 positional arguments but 1 was given"
      ]
     }
    ],
    "source": [
     "# Self is always required as the first argument\n",
     "class check:\n",
-    "    def __init__(self):\n",
+    "    def __init__():\n",
     "        print(\"This is Constructor\")\n",
     "\n",
     "object = check()\n",
@@ -301,14 +316,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 5,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "we have used another parameter name in place of self\n"
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-5-78306e372d9c>, line 4)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-5-78306e372d9c>\"\u001b[1;36m, line \u001b[1;32m4\u001b[0m\n\u001b[1;33m    Def __init__(in_place_of_self):\u001b[0m\n\u001b[1;37m        ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
      ]
     }
    ],
@@ -316,7 +332,7 @@
     "# Write Python3 code here\n",
     "\n",
     "class this_is_class:\n",
-    "    def __init__(in_place_of_self):\n",
+    "    Def __init__(in_place_of_self):\n",
     "        print(\"we have used another \"\n",
     "        \"parameter name in place of self\")\n",
     "\n",
@@ -334,14 +350,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 6,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Hello, my name is Hans Madugu\n"
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-6-1035bb68ffee>, line 6)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-6-1035bb68ffee>\"\u001b[1;36m, line \u001b[1;32m6\u001b[0m\n\u001b[1;33m    Def __init__(self, name):\u001b[0m\n\u001b[1;37m        ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
      ]
     }
    ],
@@ -351,7 +368,7 @@
     "class Person:\n",
     "\n",
     "    # init method or constructor\n",
-    "    def __init__(self, name):\n",
+    "    Def __init__(self, name):\n",
     "        self.name = name\n",
     "\n",
     "    # Method\n",
@@ -359,21 +376,23 @@
     "        print('Hello, my name is', self.name)\n",
     "\n",
     "p = Person('Hans Madugu')\n",
-    "p.say_hi()\n"
+    "p.say_Hi()\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 7,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Hello, my name is Enobasi\n",
-      "Hello, my name is Leela\n",
-      "Hello, my name is Divine\n"
+     "ename": "TypeError",
+     "evalue": "__init__() takes 2 positional arguments but 3 were given",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-7-14eab3814ba5>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     12\u001b[0m \u001b[1;31m# Creating different objects\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     13\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 14\u001b[1;33m \u001b[0mp1\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mPerson\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'Enobasi'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;36m17\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     15\u001b[0m \u001b[0mp2\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mPerson\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'Leela'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;36m19\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     16\u001b[0m \u001b[0mp3\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mPerson\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'Divine'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;36m18\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: __init__() takes 2 positional arguments but 3 were given"
      ]
     }
    ],
@@ -382,12 +401,12 @@
     "class Person:\n",
     "\n",
     "    # init method or constructor\n",
-    "    def __init__(self, name,age):\n",
+    "    def __init__(self, name):\n",
     "        self.name = name\n",
-    "        self.age = age\n",
+    "\n",
     "    # Method\n",
     "    def say_hi(self):\n",
-    "        print('Hello, my name is', self.name )\n",
+    "        print('Hello, my name is', self.names)\n",
     "\n",
     "# Creating different objects\n",
     "\n",
@@ -427,14 +446,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "CSC 102 - Introduction to Problem Solving\n"
+     "ename": "TypeError",
+     "evalue": "print_Course() takes 0 positional arguments but 1 was given",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-8-41c9dedc7c83>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     14\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     15\u001b[0m \u001b[1;31m# calling the instance method using the object obj\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 16\u001b[1;33m \u001b[0mobj\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mprint_Course\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m: print_Course() takes 0 positional arguments but 1 was given"
      ]
     }
    ],
@@ -446,8 +469,8 @@
     "        self.course = \"CSC 102 - Introduction to Problem Solving\"\n",
     "\n",
     "    # a method for printing data members\n",
-    "    def print_Course(self):\n",
-    "        print(self.course)\n",
+    "    def print_Course():\n",
+    "        print(self.courses)\n",
     "\n",
     "\n",
     "# creating object of the class\n",
@@ -466,24 +489,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [
-    {
-     "name": "stdin",
-     "output_type": "stream",
-     "text": [
-      "Enter first number:  67\n",
-      "Enter second number:  87\n"
-     ]
-    },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "First number = 67\n",
-      "Second number = 87\n",
-      "Addition of two numbers = 154\n"
+      "Enter first number: 43\n",
+      "Enter second number: 434\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'num3' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-9-85231d3b24df>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     21\u001b[0m \u001b[0mnum1\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0minput\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Enter first number: \"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     22\u001b[0m \u001b[0mnum2\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0minput\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Enter second number: \"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 23\u001b[1;33m \u001b[0mobj\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mAddition\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mnum1\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mnum2\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mnum3\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     24\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     25\u001b[0m \u001b[1;31m# perform Addition\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'num3' is not defined"
      ]
     }
    ],
@@ -503,14 +528,14 @@
     "        print(\"Second number = \" + str(self.second))\n",
     "        print(\"Addition of two numbers = \" + str(self.answer))\n",
     "\n",
-    "    def calculate(self):\n",
+    "    def calculate():\n",
     "        self.answer = self.first + self.second\n",
     "\n",
     "# creating object of the class\n",
     "# this will invoke parameterized constructor\n",
     "num1 = int(input(\"Enter first number: \"))\n",
     "num2 = int(input(\"Enter second number: \"))\n",
-    "obj = Addition(num1, num2)\n",
+    "obj = Addition(num1, num2, num3)\n",
     "\n",
     "# perform Addition\n",
     "obj.calculate()\n",
@@ -528,22 +553,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Oscar is a mammal\n",
-      "Peaches is also a mammal\n",
-      "My name is Oscar\n",
-      "My name is Peaches\n"
+     "ename": "NameError",
+     "evalue": "name 'Dog' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-10-c03affaa84fb>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      9\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     10\u001b[0m \u001b[1;31m# Object instantiation\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 11\u001b[1;33m \u001b[0mdog1\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mDog\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Oscar\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     12\u001b[0m \u001b[0mdog2\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mDog\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Peaches\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     13\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'Dog' is not defined"
      ]
     }
    ],
    "source": [
-    "class Dog:\n",
+    "class Dogs:\n",
     "\n",
     "    # class attribute\n",
     "    attr1 = \"mammal\"\n",
@@ -558,7 +584,7 @@
     "\n",
     "# Accessing class attributes\n",
     "print(\"Oscar is a {}\".format(dog1.__class__.attr1))\n",
-    "print(\"Peaches is also a {}\".format(dog2.__class__.attr1))\n",
+    "print(\"Peaches is also a {}\".format(dog3.__class__.attr2))\n",
     "\n",
     "# Accessing instance attributes\n",
     "print(\"My name is {}\".format(dog1.name))\n",
@@ -574,25 +600,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 34,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdin",
-     "output_type": "stream",
-     "text": [
-      "Enter the name of the first student:  yutuyj\n",
-      "Enter the name of the second student:  hkhbg\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "My name is yutuyj\n",
-      "I'm studying Computer Science\n",
-      "My name is hkhbg\n",
-      "I'm studying Computer Science\n"
+     "ename": "SyntaxError",
+     "evalue": "unmatched ')' (<ipython-input-11-45f08f40441b>, line 16)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-11-45f08f40441b>\"\u001b[1;36m, line \u001b[1;32m16\u001b[0m\n\u001b[1;33m    stud2 = SST(\"Enter the name of the second student: \"))\u001b[0m\n\u001b[1;37m                                                         ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unmatched ')'\n"
      ]
     }
    ],
@@ -607,15 +623,15 @@
     "        self.name = name\n",
     "\n",
     "    def speak(self):\n",
-    "        print(\"My name is {}\".format(self.name))\n",
-    "        print(\"I'm studying {}\".format(stud1.__class__.prog1))\n",
+    "        print(\"My name is {}\".format(self.mane))\n",
+    "        print(\"I'm studying {}\".format(stud1.__class__.prog))\n",
     "\n",
     "# Object instantiation\n",
     "stud1 = SST(input(\"Enter the name of the first student: \"))\n",
-    "stud2 = SST(input(\"Enter the name of the second student: \"))\n",
+    "stud2 = SST(\"Enter the name of the second student: \"))\n",
     "\n",
     "# Accessing class methods\n",
-    "stud1.speak()\n",
+    "stud1.speak(self)\n",
     "stud2.speak()\n"
    ]
   },
@@ -629,25 +645,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Rodger details:\n",
-      "Rodger is a dog\n",
-      "Breed:  Pug\n",
-      "Color:  brown\n",
-      "\n",
-      "Buzo details:\n",
-      "Buzo is a dog\n",
-      "Breed:  Bulldog\n",
-      "Color:  black\n",
-      "\n",
-      "Accessing class variable using class name\n",
-      "dog\n"
+     "ename": "NameError",
+     "evalue": "name 'bread' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-12-c2dfe0edfddc>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     18\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     19\u001b[0m \u001b[1;31m# Objects of Dog class\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 20\u001b[1;33m \u001b[0mRodger\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mDog\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Pug\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"brown\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     21\u001b[0m \u001b[0mBuzo\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mDogs\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Bulldog\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"black\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     22\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m<ipython-input-12-c2dfe0edfddc>\u001b[0m in \u001b[0;36m__init__\u001b[1;34m(self, breed, color)\u001b[0m\n\u001b[0;32m     14\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     15\u001b[0m         \u001b[1;31m# Instance Variable\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 16\u001b[1;33m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mbreed\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mbread\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     17\u001b[0m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcolor\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcolor\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     18\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'bread' is not defined"
      ]
     }
    ],
@@ -667,15 +677,15 @@
     "    def __init__(self, breed, color):\n",
     "    \n",
     "        # Instance Variable\n",
-    "        self.breed = breed\n",
+    "        self.breed = bread\n",
     "        self.color = color\n",
     "    \n",
     "# Objects of Dog class\n",
     "Rodger = Dog(\"Pug\", \"brown\")\n",
-    "Buzo = Dog(\"Bulldog\", \"black\")\n",
+    "Buzo = Dogs(\"Bulldog\", \"black\")\n",
     "\n",
     "print('Rodger details:')\n",
-    "print('Rodger is a', Rodger.animal)\n",
+    "print('Rodger is a', Rodger.aminal)\n",
     "print('Breed: ', Rodger.breed)\n",
     "print('Color: ', Rodger.color)\n",
     "\n",
@@ -802,7 +812,7 @@
  ],
  "metadata": {
   "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
+   "display_name": "Python 3",
    "language": "python",
    "name": "python3"
   },
@@ -816,7 +826,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.11.7"
+   "version": "3.8.5"
   }
  },
  "nbformat": 4,
